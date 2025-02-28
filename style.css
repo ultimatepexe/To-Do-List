@@ -1,0 +1,121 @@
+/* !!! CSS CREATED BY GROK 3 !!! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#addTaskDiv {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #fff;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #666;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#taskList li {
+    background-color: #3a3a3a;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.taskSpan {
+    flex: 1;
+    color: #fff;
+}
+
+.editInput {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.editButton {
+    background-color: #4a90e2;
+}
+
+.editButton:hover {
+    background-color: #357abd;
+}
+
+.saveButton {
+    background-color: #2ecc71;
+}
+
+.saveButton:hover {
+    background-color: #27ae60;
+}
+
+.deleteButton {
+    background-color: #e74c3c;
+}
+
+.deleteButton:hover {
+    background-color: #c0392b;
+}
+
+.completed .taskSpan {
+    text-decoration: line-through;
+    color: #888;
+}
