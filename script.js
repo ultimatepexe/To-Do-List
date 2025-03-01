@@ -107,3 +107,9 @@ function saveEdit(li) {
 function deleteTask(li) {
     li.remove()
 }
+
+document.getElementById("taskInput").addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        addTask()
+    }
+})
