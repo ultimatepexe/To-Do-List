@@ -80,6 +80,8 @@ button:hover {
 .taskSpan {
     flex: 1;
     color: #fff;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .editInput {
