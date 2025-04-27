@@ -1,5 +1,3 @@
-/* !!! CSS CREATED BY GROK 3 !!! */
-
 * {
     margin: 0;
     padding: 0;
@@ -7,30 +5,31 @@
 }
 
 body {
-    background-color: #1a1a1a;
+    background-color: black;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+    padding: 10px;
 }
 
 main {
-    background-color: #2d2d2d;
+    background-color: #0b0b0b;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    max-width: 500px;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 30px 0px;
 }
 
 h1 {
     color: #ffffff;
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-#addTaskDiv {
+div {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -39,11 +38,12 @@ h1 {
 #taskInput {
     flex: 1;
     padding: 8px;
-    border: 1px solid #444;
+    border: 1px solid #222;
     border-radius: 5px;
-    background-color: #3a3a3a;
+    background-color: #2a2a2a;
     color: #fff;
     outline: none;
+    min-width: 10px;
 }
 
 #taskInput:focus {
@@ -54,7 +54,7 @@ button {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #4a4a4a;
+    background-color: #2a2a2a;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -64,8 +64,8 @@ button:hover {
     background-color: #666;
 }
 
-#taskList li {
-    background-color: #3a3a3a;
+ul > li {
+    background-color: #2a2a2a;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
@@ -95,7 +95,7 @@ button:hover {
 }
 
 .editButton {
-    background-color: #4a90e2;
+    background-color: #3792fa;
 }
 
 .editButton:hover {
@@ -110,15 +110,44 @@ button:hover {
     background-color: #27ae60;
 }
 
+.cancelButton {
+    background-color: #ff0000;
+}
+
+.cancelButton:hover {
+    background-color: #ff3434;
+}
+
 .deleteButton {
-    background-color: #e74c3c;
+    background-color: #ff0000;
 }
 
 .deleteButton:hover {
-    background-color: #c0392b;
+    background-color: #ff3434;
 }
 
 .completed .taskSpan {
     text-decoration: line-through;
     color: #888;
+}
+
+@media (max-width: 400px) {
+    div {
+        flex-direction: column;
+    }
+
+    #taskInput {
+        width: 100%;
+        padding: 12px;
+    }
+
+    div button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    ul li button {
+        padding: 10px 12px;
+    }
 }

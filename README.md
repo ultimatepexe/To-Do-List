@@ -1,6 +1,6 @@
 # To-Do-List
 
-A simple and elegant **To-Do List** web app built using pure **HTML**, **CSS**, and **JavaScript**
+A simple and elegant **To-Do List** web app built using **HTML**, **CSS**, and **TypeScript**
 
 This project allows users to:
 - ➕ Add new tasks
@@ -12,6 +12,5 @@ This project allows users to:
 ## Features
 - Clean and responsive UI
 - Inline task editing
-- Keyboard "Enter" support to add tasks faster
+- Keyboard "Enter" support to add and edit tasks faster
 - Completed tasks are visually distinguished
-- Built with pure JS: no dependencies required
