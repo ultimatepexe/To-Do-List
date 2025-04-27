@@ -1,5 +1,4 @@
 "use strict";
-var _a;
 const taskList = document.querySelector("ul");
 function toggleTaskState(task, isEditing) {
     const checkbox = task.querySelector(".checkbox");
@@ -109,7 +108,7 @@ function saveEdit(task) {
     }
     toggleTaskState(task, false);
 }
-(_a = document.querySelector("input")) === null || _a === void 0 ? void 0 : _a.addEventListener("keydown", (event) => {
+document.querySelector("input").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         addTask();
     }

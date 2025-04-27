@@ -127,7 +127,7 @@ function saveEdit(task: HTMLElement): void {
     toggleTaskState(task, false)
 }
 
-document.querySelector("input")?.addEventListener("keydown", (event: KeyboardEvent) => {
+document.querySelector("input")!.addEventListener("keydown", (event: KeyboardEvent) => {
     if (event.key === "Enter") {
         addTask()
     }
